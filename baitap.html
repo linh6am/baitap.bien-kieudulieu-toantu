@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập biến, kiểu dữ liệu và toán tử</title>
+</head>
+<body>
+    <script>
+    //Bài 1:
+       //Đề bài: let x = 21 * (53 + '5' - '2') + 21 - '20' / '5' - (11 + 2 - '6' * 4);
+       //Các bước:
+       //1. (53 + '5' - '2') = 533 (1)
+       //2. (11 + 2 - '6' * 4) = (6 * 4 = 24); (11 + 2 = 13) -> (13 - 24) = -11 (2)
+       //3. Căn cứ (1) và (2) ta có: 21 * 533 + 21 - '20' / '5' - -11
+       //4. 21 * 533 = 11193 (3)
+       //5. '20' / '5' = 4 (4)
+       //6. Căn cứ '3' và '4' ta có: 11193 + 21 - 4 - -11
+       //7. Kết quả: x = 11221
+
+    //Bài 2:
+       //let a = 1;
+       //let b = 2;
+       //let c = b++ - --b + a++ - b-- + ++a;
+       //Các bước:
+       //1. (b++ (b = 2)) - (--b (b = 3-1 -> 2)) + (a++ (a = 1)) - (b-- (b = 2)) + (++a (a = 2 + 1 -> 3))
+       //2. Kết quả của c: 2 - 2 + 1 - 2 + 3 = 2
+       //3. Kết quả của a: a++ + ++a = 3
+       //4. Kết quả của b: b++ + --b + b-- = 1
+    </script>
+</body>
+</html>
